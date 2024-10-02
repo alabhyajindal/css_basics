@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CSS basics</title>
+  </head>
+  <body>
+    <section>
+      <h2 id="what">What is CSS?</h2>
+      <p>
+        CSS is a <strong>style sheet language</strong>. We use CSS to
+        selectively style HTML elements. For example, this CSS selects paragraph
+        text, setting the color to red:
+      </p>
+      <pre><code>p {
+    color: red;
+}</code></pre>
+    </section>
+
+    <section>
+      <h2>Ruleset Anatomy</h2>
+      <img
+        src="./assets/anatomy.png"
+        alt="Anatomy of a CSS ruleset"
+        width="500"
+      />
+
+      <h3>Selector</h3>
+      <p>HTML element name at the start</p>
+
+      <h3>Properties</h3>
+      <p>The aspect of the selector that we want to style</p>
+
+      <h3>Property value</h3>
+      <p>One of the possible values for a given property</p>
+
+      <h3>Declaration</h3>
+      <p>A single rule</p>
+    </section>
+
+    <section>
+      <h2>Errors?</h2>
+      <p>You won't see any errors! CSS fails silently.</p>
+      <p>
+        Sometimes frustrating because of this - but it gets better over time.
+      </p>
+      <video src="./assets/peter_griffin_css.mp4" controls></video>
+    </section>
+
+    <section>
+      <h2>Multiple Elements</h2>
+      <p>Separate multiple elements by commas. For example:</p>
+      <pre><code>p,
+li,
+h1 {
+     color: red;
+   }</code></pre>
+    </section>
+
+    <section>
+      <h2>Selector types</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Selector name</th>
+            <th>What it selects</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Element selector</td>
+            <td>All elements of a specified type.</td>
+            <td><code>p</code> selects <code>&lt;p&gt;</code></td>
+          </tr>
+          <tr>
+            <td>ID selector</td>
+            <td>The element with the specified ID (unique).</td>
+            <td>
+              <code>#my-id</code> selects <code>&lt;p id="my-id"&gt;</code>
+            </td>
+          </tr>
+          <tr>
+            <td>Class selector</td>
+            <td>Elements with the specified class.</td>
+            <td>
+              <code>.my-class</code> selects
+              <code>&lt;p class="my-class"&gt;</code>
+            </td>
+          </tr>
+          <tr>
+            <td>Pseudo-class selector</td>
+            <td>Elements in a specific state.</td>
+            <td><code>a:hover</code> selects links on hover.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Which selector should you use?</h3>
+      <p>
+        Use class. Preferred over ID selectors because of performance and ease
+        of use - don't need to remember uniqueness.
+      </p>
+    </section>
+
+    <section>
+      <h2>Box model</h2>
+      <img src="./assets/box-model.png" alt="Box model." />
+      <div id="box"></div>
+    </section>
+  </body>
+</html>

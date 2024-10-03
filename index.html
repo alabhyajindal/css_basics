@@ -7,8 +7,22 @@
     <title>CSS basics</title>
   </head>
   <body>
-    <section>
-      <h2 id="what">What is CSS?</h2>
+    <section id="toc">
+      <h2>Table of Contents</h2>
+      <nav>
+        <ul>
+          <a href="/#what"><li>What is CSS?</li></a>
+          <a href="/#anatomy"><li>Ruleset anatomy</li></a>
+          <a href="/#errors"><li>Errors?</li></a>
+          <a href="/#multiple"><li>Multiple elements</li></a>
+          <a href="/#selectors"><li>Selector types</li></a>
+          <a href="/#box"><li>Box model</li></a>
+        </ul>
+      </nav>
+    </section>
+
+    <section id="what">
+      <h2>What is CSS?</h2>
       <p>
         CSS is a <strong>style sheet language</strong>. We use CSS to
         selectively style HTML elements. For example, this CSS selects paragraph
@@ -19,8 +33,8 @@
 }</code></pre>
     </section>
 
-    <section>
-      <h2>Ruleset Anatomy</h2>
+    <section id="anatomy">
+      <h2>Ruleset anatomy</h2>
       <img
         src="./assets/anatomy.png"
         alt="Anatomy of a CSS ruleset"
@@ -40,13 +54,13 @@
       <p>A single rule</p>
     </section>
 
-    <section>
+    <section id="errors">
       <h2>Errors?</h2>
       <p>You won't see any errors! CSS fails silently.</p>
     </section>
 
-    <section>
-      <h2>Multiple Elements</h2>
+    <section id="multiple">
+      <h2>Multiple elements</h2>
       <p>Separate multiple elements by commas. For example:</p>
       <pre><code>p,
 li,
@@ -55,7 +69,7 @@ h1 {
    }</code></pre>
     </section>
 
-    <section>
+    <section id="selectors">
       <h2>Selector types</h2>
       <table>
         <thead>
@@ -101,10 +115,10 @@ h1 {
       </p>
     </section>
 
-    <section>
+    <section id="box">
       <h2>Box model</h2>
       <img src="./assets/box-model.png" alt="Box model." />
-      <div id="box"></div>
+      <div id="box-div"></div>
     </section>
   </body>
 </html>

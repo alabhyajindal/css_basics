@@ -20,6 +20,19 @@ h3 {
   margin-top: 24px;
 }
 
+#toc ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 pre {
   margin-top: 12px;
   padding: 16px;
@@ -32,21 +45,11 @@ td {
   padding: 4px;
 }
 
-#box {
+#box-div {
   width: 400px;
   height: 200px;
   background-color: lightblue;
   padding: 2rem;
   border: 5px solid black;
   margin: 1rem;
-}
-
-#box:hover {
-  border: 10px solid black;
-  transition: 0.2s linear;
-}
-
-img:hover {
-  transform: rotate(4deg);
-  transition: 0.2s linear all;
 }

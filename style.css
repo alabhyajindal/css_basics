@@ -43,7 +43,7 @@ a:hover {
 }
 
 pre {
-  margin-top: 12px;
+  margin-block: 12px;
   padding: 16px;
   background-color: #eee;
 }

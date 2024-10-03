@@ -137,6 +137,61 @@ h1 {
         <li>Move both to a folder</li>
         <li>Open the folder in VS Code</li>
       </ul>
+
+      <h3>Create and link stylesheet</h3>
+      <ul>
+        <li>
+          In the same folder, create a new file <code>style.css</code>. Could
+          name it anything. General convention is to name it <code>style</code>.
+        </li>
+        <li>Link the stylesheet to the HTML.</li>
+        <li>In the <code>head</code> tag, enter the following:</li>
+        <pre><code>&lt;link href=&quot;./style.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;</code></pre>
+      </ul>
+
+      <h3>Change the font</h3>
+      <pre><code>body {
+  font-family: sans-serif;
+}</code></pre>
+
+      <h3>Center the page</h3>
+      <p>Add styles to the body tag</p>
+      <pre><code>max-width: 1000px;
+margin: 0 auto;</code></pre>
+
+      <h3>Make the <code>h1</code> bigger</h3>
+      <pre><code>h1 {
+  font-size: 48px;
+}</code></pre>
+
+      <h3>Change the text and background color</h3>
+      <p>
+        Add to body. Check the
+        <a href="https://coolors.co/contrast-checker/112a46-acc8e5">contrast</a
+        >.
+      </p>
+      <pre><code>background-color: #eee;
+color: #333;</code></pre>
+
+      <h3>Position image attribute closer to the image</h3>
+      <ul>
+        <li>Add <code>id attribution</code> to the <code>p</code> element</li>
+        <li>Give it a negative <code>margin-top</code> of <code>4px</code></li>
+      </ul>
+
+      <h3>Increase space between <code>sections</code></h3>
+      <p>Add <code>margin-bottom</code> to section</p>
+      <p>
+        Play around with it - give it a <code>background-color</code>,
+        <code>margin</code>
+      </p>
+
+      <h3>Remove list dots (or change their style)</h3>
+      <p>
+        The property name is <code>list-style-type</code>. Press
+        <code>Ctrl + Space</code>
+        on the property value area and VS Code will suggest possible values.
+      </p>
     </section>
   </body>
 </html>

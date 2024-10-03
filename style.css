@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: sans-serif;
   font-size: 24px;
@@ -19,6 +23,10 @@ h2 {
 
 h3 {
   margin-top: 24px;
+}
+
+p {
+  margin-block: 4px;
 }
 
 #toc ul {
